@@ -33,3 +33,4 @@ fun main(){
 // value의 max 값의 count가 1보다 크면 여러개 있다는 뜻이므로 ? 출력
 // value 중에 max 값인 것의 key를 w에 저장
 // w는 set이므로 for each로 출력해줌
+// map.maxBy{it.value} 가 되는구나
