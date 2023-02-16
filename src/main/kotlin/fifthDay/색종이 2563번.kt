@@ -3,15 +3,21 @@ import java.io.*
 fun main(){
     val br = BufferedReader(InputStreamReader(System.`in`))
     val count = br.readLine().toInt()
-    var array = Array(count){Array(count){0} }
+    var array = Array(100){Array(100){0} }
     repeat(count){
-        val (w, h) = br.readLine().split(' ').map{i -> i.toInt()}
-        array[0][it] = w
-        array[1][it] = h
-    }
-    println(array[0].max())
-    println(array[1].max())
-    var width = array[0].max()+10 - array[0].min()
-    var height = array[1].max()+10 - array[1].min()
+        val (one,two) = br.readLine().split(' ').map{it.toInt()}
+        for (index in two until two+10){
+            for (index1 in one until one+10){
+                array[index][index1] = 1
+            }
+        }
 
+    }
+    var count1 = 0
+    for (index in array.indices){
+        for (index1 in array[index].indices)
+            if (array[index][index1] == 1)
+                count1 += 1
+    }
+    println(count1)
 }
