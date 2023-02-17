@@ -1,20 +1,20 @@
 package sixthDay
 import java.io.*
-fun main(){
+fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
+    val bw = BufferedWriter(OutputStreamWriter(System.`out`))
     val n = br.readLine().toInt()
-    val list = mutableListOf<Pair<Int,Int>>()
-    repeat(n){
-        val (x,y) = br.readLine().split(' ').map{it.toInt()}
-        list.add(Pair(x,y))
+    val list = mutableListOf<Pair<Int, Int>>()
+    repeat(n) {
+        val (x, y) = br.readLine().split(' ').map { it.toInt() }
+        list.add(Pair(x, y))
     }
-    val mp = mutableMapOf<Int,Int>()
-    list.forEach{
-        if (mp.containsKey(it.first))
-            mp[it.first] = mp[it.first]!! + 1
-        else
-            mp[it.first] = 1
+    list.sortedWith(compareBy({it.first}, {it.second})).forEach{
+        bw.write("${it.first} ${it.second}")
+        bw.write("\n")
     }
-    list.sortBy{it.first}
-    println(list.indexOf())
+    bw.flush()
+
 }
+//와 sortedWith(compareBy) 미쳤다.
+// 너무 편리하다 외워야 한다
