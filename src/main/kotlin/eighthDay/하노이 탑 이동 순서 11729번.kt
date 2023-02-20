@@ -8,9 +8,14 @@ fun main() {
     var cnt = 0
 
     fun hanoi(num: Int, start: Int, sub: Int, to: Int){
-        if (num == 0) return
+        if (num == 0) {
+            println("리턴")
+            return
+        }
         cnt += 1
-        hanoi (num - 1, start, to, sub) // N - 1 개 원반을 시작점 -> sub
+        println("1번째 $num")
+        hanoi (num - 1, start, to, sub) // N - 1 개 원반을 시작점 -> sub     1  2  3
+        println("2 번째 $num")
         sb.append("$start $to\n") // n번 째 원반 -> 목표 기둥
         hanoi(num - 1, sub, start, to) // N-1 개 원반 sub -> to
     }
