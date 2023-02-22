@@ -13,6 +13,10 @@ fun main() {
     var count = 0
     var temp = 0
     val addList = mutableListOf<Pair<Int,Int>>()
+    fun func(num: Int, count: Int){
+        if (addList.isEmpty())
+            return
+    }
     while (true) {
         for (index in arr.indices) {
             for (index1 in arr[index].indices) {
