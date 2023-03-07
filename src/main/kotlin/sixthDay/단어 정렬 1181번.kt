@@ -3,13 +3,12 @@ import java.io.*
 fun main(){
     val br = BufferedReader(InputStreamReader(System.`in`))
     val bw = BufferedWriter(OutputStreamWriter(System.`out`))
-    val n = br.readLine().toInt()
+    val count = br.readLine().toInt()
     val list = mutableListOf<String>()
-    repeat(n){
+    repeat(count){
         list.add(br.readLine())
     }
-    val a = list.distinct().sortedWith(compareBy
-        ({it.length},{it}))
+    val a = list.distinct().sortedWith(compareBy({it.length}, {it}))
     a.forEach{bw.write(it)
     bw.write("\n")}
     bw.flush()

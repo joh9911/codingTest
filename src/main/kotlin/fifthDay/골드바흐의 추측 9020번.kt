@@ -20,6 +20,7 @@ fun main() {
         }
         println("$num1 ${n - num1}")
     }
+
 }
 fun fun2(n: Int): Boolean {
     var i = 2

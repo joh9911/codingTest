@@ -34,5 +34,4 @@ fun main(){
     else
         println(mValue[0])
     println(list.keys.max() - list.keys.min())
-
 }
