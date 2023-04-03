@@ -1,3 +1,5 @@
+package Firstday
+
 import java.io.*
 fun main(){
     val br = BufferedReader(InputStreamReader(System.`in`))
