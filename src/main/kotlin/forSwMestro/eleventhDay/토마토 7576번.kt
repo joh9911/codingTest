@@ -5,9 +5,9 @@ fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val (m, n) = br.readLine().split(' ').map { it.toInt() }
     val arr = Array(n) { Array(m) { 0 } }
-    val dx = arrayOf(0, 0, 1, -1)
-    val dy = arrayOf(1, -1, 0, 0)
-    val addList = LinkedList<Pair<Int,Int>>()
+    val dx = arrayOf(0, 0, 1, -1) // x좌표
+    val dy = arrayOf(1, -1, 0, 0) // y좌표
+    val addList = LinkedList<Pair<Int,Int>>() // 1이 위치하는 x y 좌표
     repeat(n) { i ->
         val input = br.readLine().split(' ').map { it.toInt() }
         for (index in input.indices) {
@@ -30,9 +30,7 @@ fun main() {
                 arr[numY][numX] = arr[num.first][num.second] + 1
                 addList.add(Pair(numY,numX))
             }
-
         }
-
         for (index in arr.indices){
             for (index1 in arr[index].indices){
                 if (arr[index][index1] == 0){
