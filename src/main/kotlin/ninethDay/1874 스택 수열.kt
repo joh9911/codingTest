@@ -32,14 +32,12 @@ fun main(){
             }
         }
     }
-
     if (stack.isEmpty()){
         str.forEach{println(it)}
     }
     else{
         println("NO")
     }
-
 }
 //와 스택에 문자를 넣고 출력하는 방법도 있구나 ㄷㄷ
 // 지금은 이전 코드 형태임
