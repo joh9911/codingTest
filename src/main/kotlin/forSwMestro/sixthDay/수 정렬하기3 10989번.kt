@@ -1,6 +1,6 @@
 package sixthDay
 import java.io.*
-//fun lastDay.Firstday.thirteenthDay.fourteenthDay.eighteenthDay.twentythDay.main(){
+//fun lastDay.Firstday.thirteenthDay.fourteenthDay.eighteenthDay.twentythDay.twentyOneThDay.main(){
 //    val br = BufferedReader(InputStreamReader(System.`in`))
 //    val bw = BufferedWriter(OutputStreamWriter(System.`out`))
 //    val n = br.readLine().toInt()
