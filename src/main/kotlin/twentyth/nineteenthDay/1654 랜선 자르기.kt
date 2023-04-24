@@ -1,7 +1,7 @@
 package twentyth.nineteenthDay
 
 import java.io.*
-//fun twentythDay.twentyOneThDay.main(){
+//fun twentythDay.twentyOneThDay.twentythreethDay.main(){
 //    val br = BufferedReader(InputStreamReader(System.`in`))
 //    val (k,n) = br.readLine().split(' ').map{it.toInt()}
 //    var a = 0
