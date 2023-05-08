@@ -1,5 +1,5 @@
 package twentyFirst_thirtyth.`twenty first Day`//import java.io.*
-//fun twentyOneThDay.twentythreethDay.thirtyth.main(){
+//fun twentyOneThDay.twentythreethDay.thirtyth.thirtyThird.main(){
 //    val br = BufferedReader(InputStreamReader(System.`in`))
 //    val n = br.readLine().toInt()
 //    val arr = Array(n){Array(3){0} }
