@@ -9,8 +9,6 @@ fun main(){
 
     var count = 0
 
-
-
     fun dfs(num: Int, targetNum: Int, visit: Array<Boolean>, arr: Array<Int>, prevIdx: Int){
         if (num == targetNum){
             if (arr.sum() == s){
