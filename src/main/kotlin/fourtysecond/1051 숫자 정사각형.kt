@@ -16,8 +16,10 @@ fun main(){
     for (i in arr.indices){
         for (j in arr[i].indices){
             val first = arr[i][j]
+
             var xStart = j
             var yStart = i
+
             while (true){
                 if (xStart >= m || yStart >= n)
                     break
