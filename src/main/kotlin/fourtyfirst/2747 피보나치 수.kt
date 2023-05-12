@@ -1,6 +1,5 @@
 package fourtyfirst
 import java.io.*
-import java.math.BigInteger
 
 fun main(){
     val br = BufferedReader(InputStreamReader(System.`in`))

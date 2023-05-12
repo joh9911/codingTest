@@ -1,6 +1,5 @@
 package fourtyfirst
 import java.io.*
-import java.math.BigInteger
 import java.util.*
 
 fun main(){
