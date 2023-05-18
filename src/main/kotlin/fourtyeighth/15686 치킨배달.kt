@@ -22,10 +22,13 @@ fun main(){
             arr[it+1][index+1] = list[index]
         }
     }
-
+    // 치킨 집을 고르는 배열
     val chooseArr = Array(m){Pair(0,0)}
+    // 치킨집 방문 배열
     val chooseVisit = Array(chickenLocation.size){false}
+    // 도시 치킨거리를 모두 저장할 배열
     val ansArr = arrayListOf<Int>()
+
     fun dfs1(num: Int, prevIdx: Int){
         if (num == m){
             var sum = 0
@@ -56,6 +59,8 @@ fun main(){
         }
     }
     dfs1(0, -1)
+
     println(ansArr.min())
 
-}//4,3 5 5
+}
+// 7:40
