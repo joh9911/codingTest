@@ -23,7 +23,7 @@ fun main(){
 //package thirdDay
 //import java.io.*
 //
-//fun thirteenthDay.fourteenthDay.eighteenthDay.twentythDay.twentyOneThDay.twentythreethDay.thirtyth.thirtyThird.main(){
+//fun thirteenthDay.fourteenthDay.eighteenthDay.twentythDay.twentyOneThDay.twentythreethDay.thirtyth.thirtyThird.fiftysecond.main(){
 //    val br = BufferedReader(InputStreamReader(System.`in`))
 //    val n = br.readLine().toInt()
 //    val nList = br.readLine().split(' ').map{it.toInt()}
