@@ -1,4 +1,4 @@
-package sixtythird
+package sixtyfirst_seventieth.sixtythird
 import java.io.*
 fun main(){
     val br = BufferedReader(InputStreamReader(System.`in`))
